@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-//prueba conexion buena de la buena. 
+//prueba conexion buena de la buena de la buena. 
 
 class CommunityLink extends Model
 {
