@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
     <div class="container">
         <div class="row">
             {{-- Left colum to show all the links in the DB --}}
@@ -48,4 +49,12 @@
         </div>
         {{ $links->links() }}
     </div>
+=======
+<h1>Community bueno</h1>
+@foreach ($links as $link)
+<li>{{$link->title}} 
+<small>Contributed by: {{$link->creator->name}} {{$link->updated_at->diffForHumans()}}</small></li>
+@endforeach
+{{$links->links()}}
+>>>>>>> b7588bb6958b8b98c6805043cabc46cf4b7b4cea
 @stop
