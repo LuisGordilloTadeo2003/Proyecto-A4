@@ -21,7 +21,7 @@ Auth::routes(['verify' => 'true']);
 
 Route::get('/home', function () {
     return view('home');
-})->middleware(['auth', 'verified'])->name('home');
+})->middleware('auth')->name('home');
 
 Route::get('community', [App\Http\Controllers\CommunityLinkController::class, 'index']);
 
